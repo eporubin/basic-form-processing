@@ -26,7 +26,7 @@ The data is sent as name-value pairs e.g. if the user entered *Fred* into the fi
 |uname|Fred|
 |col|red|
 
-Look carefully at the HTML in the form to see how these name-value pairs are constructed.
+Look carefully at the HTML in the form to see how these name-value pairs will be constructed.
 
 * The method attribute specifies how the data will be sent. In this example we use a value of POST. See below for an alternative to POST.
 
@@ -84,7 +84,7 @@ $col = $_GET["col"]; //gets hold of whatever the user typed into the col text fi
 
 * Again this is nearly identical to the previous example, we have just swapped the word POST to GET.
 * The difference is how the data is sent. With a GET request the data is sent as part of the URL.
-* When the user clicks the submit button, the browser will generate the following url:
+* When the user clicks the submit button, the browser will generate the  url like the following:
 
 ```
 http://localhost/CIT2202/somepage.php?uname=Fred&col=red
